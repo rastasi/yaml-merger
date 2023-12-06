@@ -1,3 +1,3 @@
 build:
 	go mod download
-	go build -o yaml-merger main.go
+	env GOOS=linux GOARCH=amd64 go build -o yaml-merger main.go
